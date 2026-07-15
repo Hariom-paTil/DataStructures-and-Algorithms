@@ -38,6 +38,22 @@ namespace DataStructures_and_Algorithms
             }
         }
 
+
+        // Example 3 reverse a number using recursion
+
+        public int ReverseNumber(int n, int rev = 0)
+        {
+            if (n == 0)
+            {
+                return rev;
+            }
+            else
+            {
+                rev = rev * 10 + n % 10; // this formula break the number into its digits and adds them to the rev variable in reverse order
+                return ReverseNumber(n / 10, rev);
+            }
+        }
+
         //types of recusions
         // 1. Direct Recursion: A method calls itself directly.
         // 2. Indirect Recursion: A method calls another method, which in turn calls the first method.
