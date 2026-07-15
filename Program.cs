@@ -33,10 +33,11 @@ namespace DataStructures_and_Algorithms
 
 
 
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
 
-            int[] A = { 23, 45, 67, 8, 8, 34, 66 };
+            int[] A = { 23, 45, 67, 8, 8, 34, 66 }, b = {12,22,44,55,66,77,88};
+            
 
             
             Recursion recursion = new Recursion();
@@ -45,7 +46,9 @@ namespace DataStructures_and_Algorithms
 
             // 1:SerachingAlogorithms
             LinearSearch linearSearch = new LinearSearch();
-            linearSearch.SearchFunction(A, 34);
+            Console.WriteLine("Result Of LinearSearch :"+linearSearch.SearchFunction(A, 34));
+            BinarySearch binarySearch = new BinarySearch();
+            Console.WriteLine("Result Of BinarySearch :"+binarySearch.BinarySearchFunction(b, 22));
 
 
 
