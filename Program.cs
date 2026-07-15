@@ -1,4 +1,5 @@
 ﻿using DataStructures_and_Algorithms.SearchingAlgorithms;
+using DataStructures_and_Algorithms.SortingAlgorithms;
 
 namespace DataStructures_and_Algorithms
 {
@@ -51,6 +52,14 @@ namespace DataStructures_and_Algorithms
             Console.WriteLine("Result Of BinarySearch :"+binarySearch.BinarySearchFunction(b, 22));
 
 
+            // 2:SortingAlgorithms
+            SelectionSort selectionSort = new SelectionSort();
+            int[] sortedArray = selectionSort.SelectionSortFunction(A);
+            Console.WriteLine("SelectionSort :)");
+            foreach(int item in sortedArray)
+            {
+                Console.Write(item + " ");
+            }
 
 
             Console.ReadLine();
