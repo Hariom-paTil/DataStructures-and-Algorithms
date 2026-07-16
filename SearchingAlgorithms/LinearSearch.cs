@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DataStructures_and_Algorithms.SearchingAlgorithms
 {
@@ -28,6 +30,30 @@ namespace DataStructures_and_Algorithms.SearchingAlgorithms
             }
             return "value is not Found :("; // when we used string int bool at add function thne we need to return value.
                                             // in all condition otherwise it will give error
+        }
+
+
+        // Lets Sloved One Interview Question
+        
+       // Problem: Given an array of integers and a target value,
+       // find the index of the target using Linear Search.
+       // If the target is not found, return -1.
+
+        public int LinaerSearchFunction(int[] array,int value)
+        {
+
+            for(int i = 0; i < array.Length; i++)
+            {
+                if (array[i]==value)
+                {
+                    return i;
+
+                }
+            }
+
+
+            return -1;
+
         }
     }
 }

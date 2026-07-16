@@ -48,8 +48,11 @@ namespace DataStructures_and_Algorithms
             // 1:SerachingAlogorithms
             LinearSearch linearSearch = new LinearSearch();
             Console.WriteLine("Result Of LinearSearch :"+linearSearch.SearchFunction(A, 34));
+            Console.WriteLine("Location of Element In Array :"+linearSearch.LinaerSearchFunction(A, 90));
             BinarySearch binarySearch = new BinarySearch();
             Console.WriteLine("Result Of BinarySearch :"+binarySearch.BinarySearchFunction(b, 22));
+
+            
 
 
             // 2:SortingAlgorithms
