@@ -37,32 +37,34 @@ namespace DataStructures_and_Algorithms
        public static void Main(string[] args)
         {
 
-            int[] A = { 23, 45, 67, 8, 8, 34, 66 }, b = {12,22,44,55,66,77,88};
+            int[] A = { 23, 45, 67, 8, 8, 34, 66 }, b = {12,22,44,55,66,77,88} , c = { 29, 10, 14, 37, 13 };
             
 
             
-            Recursion recursion = new Recursion();
-            recursion.DisplayMessage(5);
-           Console.WriteLine("Sum of Number : "+recursion.Sum(5));
+            //Recursion recursion = new Recursion();
+            //recursion.DisplayMessage(5);
+           //Console.WriteLine("Sum of Number : "+recursion.Sum(5));
 
             // 1:SerachingAlogorithms
-            LinearSearch linearSearch = new LinearSearch();
-            Console.WriteLine("Result Of LinearSearch :"+linearSearch.SearchFunction(A, 34));
-            Console.WriteLine("Location of Element In Array :"+linearSearch.LinaerSearchFunction(A, 90));
-            BinarySearch binarySearch = new BinarySearch();
-            Console.WriteLine("Result Of BinarySearch :"+binarySearch.BinarySearchFunction(b, 22));
+           // LinearSearch linearSearch = new LinearSearch();
+           // Console.WriteLine("Result Of LinearSearch :"+linearSearch.SearchFunction(A, 34));
+            //Console.WriteLine("Location of Element In Array :"+linearSearch.LinaerSearchFunction(A, 90));
+           // BinarySearch binarySearch = new BinarySearch();
+           // Console.WriteLine("Result Of BinarySearch :"+binarySearch.BinarySearchFunction(b, 22));
+            //Console.WriteLine("Location of Element In BinarySearchArray :"+binarySearch.BinarySearchFunctionIndex(b, 22));
 
-            
+
 
 
             // 2:SortingAlgorithms
             SelectionSort selectionSort = new SelectionSort();
-            int[] sortedArray = selectionSort.SelectionSortFunction(A);
-            Console.WriteLine("SelectionSort :)");
-            foreach(int item in sortedArray)
-            {
-                Console.Write(item + " ");
-            }
+            //int[] sortedArray = selectionSort.SelectionSortFunction(A);
+            //Console.WriteLine("SelectionSort :)");
+             //foreach(int item in sortedArray)
+             //{
+             //   Console.Write(item + " ");
+           // }
+            Console.WriteLine(""+selectionSort.SelectionSortWithPasses(c));
 
 
             Console.ReadLine();
