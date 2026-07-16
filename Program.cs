@@ -67,6 +67,10 @@ namespace DataStructures_and_Algorithms
             Console.WriteLine(""+selectionSort.SelectionSortWithPasses(c));
 
 
+            BubbleSort bubbleSort = new BubbleSort();
+            bubbleSort.BubbleSortFunction(A);
+
+
             Console.ReadLine();
         }
     }
