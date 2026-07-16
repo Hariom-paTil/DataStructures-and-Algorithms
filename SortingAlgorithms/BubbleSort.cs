@@ -8,6 +8,14 @@ namespace DataStructures_and_Algorithms.SortingAlgorithms
 {
     public class BubbleSort
     {
+
+        // What is bubble sort in C#?
+        // Bubble sort is a simple comparison-based sorting algorithm that works by repeatedly stepping through the list
+        // to be sorted,
+        // comparing adjacent elements and swapping them if they are in the wrong order. The pass through the list is
+        // repeated until the list is sorted. The algorithm gets its name because smaller elements "bubble" to the top
+        // of the list while larger elements "sink" to the bottom.
+
         public void BubbleSortFunction(int[] array)
         {
 
