@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,5 +41,44 @@ namespace DataStructures_and_Algorithms.SearchingAlgorithms
             return "Value Not Found :(";
 
         }
+
+        //Let's solve one interview question
+        // Problem: Given a sorted array of integers, find the index of a given target using Binary Search.
+        // If the element is not present, return -1.
+
+        public int BinarySearchFunctionIndex(int[] array, int value) { 
+        
+            int mid,start=0,end=array.Length-1;
+
+            while (start<=end)
+            {
+                mid= (start + end) / 2;
+                if (array[mid] == value)
+                {
+
+                    return mid;
+
+
+                }
+                else if (array[mid] < value)
+                { 
+                
+                    start = mid + 1;
+                
+                }
+                else
+                {
+                    end = mid - 1;
+
+                }
+
+            }
+
+            return -1;
+
+
+
+        }
+
     }
 }
