@@ -64,11 +64,12 @@ namespace DataStructures_and_Algorithms
              //{
              //   Console.Write(item + " ");
            // }
-            Console.WriteLine(""+selectionSort.SelectionSortWithPasses(c));
+            //Console.WriteLine(""+selectionSort.SelectionSortWithPasses(c));
 
 
             BubbleSort bubbleSort = new BubbleSort();
-            bubbleSort.BubbleSortFunction(A);
+            //bubbleSort.BubbleSortFunction(A);
+            Console.WriteLine(" Check"+bubbleSort.FindPass(c));
 
 
             Console.ReadLine();

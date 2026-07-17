@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,5 +38,41 @@ namespace DataStructures_and_Algorithms.SortingAlgorithms
                 Console.Write(array[i] + " ");
             }
         }
+
+        //Question 3: Largest Number at Correct Position (Hard)
+
+        //  Using Bubble Sort, determine after how many passes the largest element reaches its final position.
+
+
+        public string FindPass(int[] array)
+        {
+            int pass = 0;
+            bool swapped = false;
+
+            // First pass only
+            for (int j = 0; j < array.Length - 1; j++)
+            {
+                if (array[j] > array[j + 1])
+                {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+
+                    swapped = true;
+                    pass++;
+                }
+            }
+
+            if (!swapped)
+            {
+                return "Largest Element Already In Last";
+            }
+
+            return "Swaps happened: " + pass;
+        }
+
+
+
+
     }
 }
