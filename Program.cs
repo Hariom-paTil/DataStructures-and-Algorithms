@@ -68,9 +68,14 @@ namespace DataStructures_and_Algorithms
 
 
             BubbleSort bubbleSort = new BubbleSort();
+            QuickSort quickSort = new QuickSort();
             //bubbleSort.BubbleSortFunction(A);
-            Console.WriteLine(" Check"+bubbleSort.FindPass(c));
-
+           // Console.WriteLine(" Check"+bubbleSort.FindPass(c));
+            int[] result = quickSort.QuickSortFunction(A, 0, A.Length - 1);
+            foreach(int item in result)
+            {
+               Console.Write(item + " ");
+            }
 
             Console.ReadLine();
         }
