@@ -37,7 +37,7 @@ namespace DataStructures_and_Algorithms
        public static void Main(string[] args)
         {
 
-            int[] A = { 23, 45, 67, 8, 8, 34, 66 }, b = {12,22,44,55,66,77,88} , c = { 29, 10, 14, 37, 13 };
+            int[] A = { 23, 45, 67, 8, 8, 34, 66 ,67}, b = {12,22,44,55,66,77,88} , c = { 29, 10, 14, 37, 13 };
             
 
             
@@ -46,7 +46,7 @@ namespace DataStructures_and_Algorithms
            //Console.WriteLine("Sum of Number : "+recursion.Sum(5));
 
             // 1:SerachingAlogorithms
-           // LinearSearch linearSearch = new LinearSearch();
+            LinearSearch linearSearch = new LinearSearch();
            // Console.WriteLine("Result Of LinearSearch :"+linearSearch.SearchFunction(A, 34));
             //Console.WriteLine("Location of Element In Array :"+linearSearch.LinaerSearchFunction(A, 90));
            // BinarySearch binarySearch = new BinarySearch();
@@ -74,9 +74,10 @@ namespace DataStructures_and_Algorithms
             int[] result = quickSort.QuickSortFunction(A, 0, A.Length - 1);
             foreach(int item in result)
             {
-               Console.Write(item + " ");
+           //    Console.Write(item + " ");
             }
 
+            Console.WriteLine("Second Largest Element"+linearSearch.getSecondLargest(A));
             Console.ReadLine();
         }
     }

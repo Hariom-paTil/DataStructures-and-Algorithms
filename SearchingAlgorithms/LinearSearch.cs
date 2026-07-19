@@ -55,5 +55,29 @@ namespace DataStructures_and_Algorithms.SearchingAlgorithms
             return -1;
 
         }
+        // Find the Second Largest Element in an Array using Linear Search
+        
+            public int getSecondLargest(int[] arr)
+            {
+                int first = arr[0], second = 0;
+                for (int i = 0; i < arr.Length-1; i++)
+                {
+
+                    if (arr[i] <= arr[i + 1])
+                    {
+                        second = first;
+                        first = arr[i + 1];
+
+                    }
+
+                }
+
+                if (second == first)
+                {
+                    return -1;
+                }
+                return second;
+            }
+        
     }
 }
