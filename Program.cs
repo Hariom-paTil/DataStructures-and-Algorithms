@@ -38,7 +38,9 @@ namespace DataStructures_and_Algorithms
        public static void Main(string[] args)
         {
 
-            int[] A = { 23, 45, 67, 8, 8, 34, 66 ,67}, b = {12,22,44,55,66,77,88} , c = { 29, 10, 14, 37, 13 }; 
+            int[] A = { 23, 45, 67, 8, 8, 34, 66, 67 },
+                b = { 12, 22, 44, 55, 66, 77, 88 },
+                c = { 29, 10, 14, 37, 13 }, revInput = { 1, 4, 3, 2, 6, 5 };
             
 
             
@@ -72,8 +74,8 @@ namespace DataStructures_and_Algorithms
             QuickSort quickSort = new QuickSort();
             //bubbleSort.BubbleSortFunction(A);
            // Console.WriteLine(" Check"+bubbleSort.FindPass(c));
-            int[] result = quickSort.QuickSortFunction(A, 0, A.Length - 1);
-            foreach(int item in result)
+            //int[] result = quickSort.QuickSortFunction(A, 0, A.Length - 1);
+            //foreach(int item in result)
             {
            //    Console.Write(item + " ");
             }
@@ -82,6 +84,11 @@ namespace DataStructures_and_Algorithms
 
            ArrayProblem arrayProblem = new ArrayProblem();
             Console.WriteLine("Second Largest Element : "+arrayProblem.SecondLargestElement(A));
+            int[] result= arrayProblem.ReverseArray(revInput);
+            foreach(int item in result)
+            {
+                Console.Write(item + " ");
+            }
 
             Console.ReadLine();
         }
