@@ -1,4 +1,5 @@
-﻿using DataStructures_and_Algorithms.SearchingAlgorithms;
+﻿using DataStructures_and_Algorithms.DSA_Problem_s;
+using DataStructures_and_Algorithms.SearchingAlgorithms;
 using DataStructures_and_Algorithms.SortingAlgorithms;
 
 namespace DataStructures_and_Algorithms
@@ -37,7 +38,7 @@ namespace DataStructures_and_Algorithms
        public static void Main(string[] args)
         {
 
-            int[] A = { 23, 45, 67, 8, 8, 34, 66 ,67}, b = {12,22,44,55,66,77,88} , c = { 29, 10, 14, 37, 13 };
+            int[] A = { 23, 45, 67, 8, 8, 34, 66 ,67}, b = {12,22,44,55,66,77,88} , c = { 29, 10, 14, 37, 13 }; 
             
 
             
@@ -77,7 +78,11 @@ namespace DataStructures_and_Algorithms
            //    Console.Write(item + " ");
             }
 
-            Console.WriteLine("Second Largest Element"+linearSearch.getSecondLargest(A));
+            //Console.WriteLine("Second Largest Element"+linearSearch.getSecondLargest(A));
+
+           ArrayProblem arrayProblem = new ArrayProblem();
+            Console.WriteLine("Second Largest Element : "+arrayProblem.SecondLargestElement(A));
+
             Console.ReadLine();
         }
     }
