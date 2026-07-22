@@ -1,4 +1,5 @@
 ﻿using DataStructures_and_Algorithms.DSA_Problem_s;
+using DataStructures_and_Algorithms.LinkList;
 using DataStructures_and_Algorithms.SearchingAlgorithms;
 using DataStructures_and_Algorithms.SortingAlgorithms;
 
@@ -82,13 +83,19 @@ namespace DataStructures_and_Algorithms
 
             //Console.WriteLine("Second Largest Element"+linearSearch.getSecondLargest(A));
 
-           ArrayProblem arrayProblem = new ArrayProblem();
-            Console.WriteLine("Second Largest Element : "+arrayProblem.SecondLargestElement(A));
-            int[] result= arrayProblem.ReverseArray(revInput);
-            foreach(int item in result)
-            {
-                Console.Write(item + " ");
-            }
+           //ArrayProblem arrayProblem = new ArrayProblem();
+           // Console.WriteLine("Second Largest Element : "+arrayProblem.SecondLargestElement(A));
+           // int[] result= arrayProblem.ReverseArray(revInput);
+           // foreach(int item in result)
+           // {
+           //     Console.Write(item + " ");
+           // }
+
+            LinksList linksList = new LinksList();
+            linksList.InsertValue(10);
+            linksList.InsertValue(11);
+            linksList.InsertValue(12);
+            linksList.Display();
 
             Console.ReadLine();
         }
