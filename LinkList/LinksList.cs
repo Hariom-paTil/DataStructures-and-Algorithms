@@ -100,10 +100,31 @@ namespace DataStructures_and_Algorithms.LinkList
             Node node = new Node(e, null);
             node.next = head; // stored the address of the head node in the next of the new node
             head = node; // head is now the new node
+            size++;
 
 
         }
 
+        public string AnyPosition(int e, int position)
+        {
+            if (position < 0 || position > size) {
+            
+             return "Invalid position";
+            }
 
-    }
+            Node anyposition=new Node(e, null);
+            Node p= head;
+            int start = 1;
+            while(start < position - 1)
+            {
+            p = p.next;
+                start++;
+            }
+            anyposition.next = p.next;
+            p.next = anyposition;
+            size++;
+            return "Inserted at position " + position;
+        }
+
+        }
 }

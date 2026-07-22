@@ -96,8 +96,12 @@ namespace DataStructures_and_Algorithms
             linksList.InsertValue(11);
             linksList.InsertValue(12);
             linksList.Display();
+            Console.WriteLine("\n");
             linksList.InsertFirst(9);
             linksList.Display();
+            Console.WriteLine(linksList.AnyPosition(15, 3));
+            linksList.Display();
+
 
             Console.ReadLine();
         }
