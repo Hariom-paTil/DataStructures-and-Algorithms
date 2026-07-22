@@ -101,6 +101,8 @@ namespace DataStructures_and_Algorithms
             linksList.Display();
             Console.WriteLine(linksList.AnyPosition(15, 3));
             linksList.Display();
+            Console.WriteLine(linksList.DeleteFirst());
+            linksList.Display();
 
 
             Console.ReadLine();

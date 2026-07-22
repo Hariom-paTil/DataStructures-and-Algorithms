@@ -126,5 +126,21 @@ namespace DataStructures_and_Algorithms.LinkList
             return "Inserted at position " + position;
         }
 
+        public string DeleteFirst() {
+
+            if (isEmpty())
+            {
+                return "Linklist Already Empty";
+            }
+
+            int e= head.element;
+            head = head.next;
+            size--;
+            return "Deleted Element :"+e;
+
+
+
+        }
+
         }
 }
