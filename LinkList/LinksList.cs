@@ -142,5 +142,26 @@ namespace DataStructures_and_Algorithms.LinkList
 
         }
 
+        public string DeleteLast() {
+
+            int i = 0;
+            Node p = head;
+            if (isEmpty())
+            {
+                return "Linklist Already Empty";
+            }
+            while (i < size-1)
+            {
+                p = p.next;
+                i = i + 1;
+            }
+            tail = p;
+            tail.next = null;
+            size--;
+
+            return "Deleted Last Element";
+
+        }
+
         }
 }
