@@ -83,27 +83,33 @@ namespace DataStructures_and_Algorithms
 
             //Console.WriteLine("Second Largest Element"+linearSearch.getSecondLargest(A));
 
-           //ArrayProblem arrayProblem = new ArrayProblem();
-           // Console.WriteLine("Second Largest Element : "+arrayProblem.SecondLargestElement(A));
-           // int[] result= arrayProblem.ReverseArray(revInput);
-           // foreach(int item in result)
-           // {
-           //     Console.Write(item + " ");
-           // }
+            //ArrayProblem arrayProblem = new ArrayProblem();
+            // Console.WriteLine("Second Largest Element : "+arrayProblem.SecondLargestElement(A));
+            // int[] result= arrayProblem.ReverseArray(revInput);
+            // foreach(int item in result)
+            // {
+            //     Console.Write(item + " ");
+            // }
 
-            LinksList linksList = new LinksList();
-            linksList.InsertValue(10);
-            linksList.InsertValue(11);
-            linksList.InsertValue(12);
-            linksList.Display();
-            Console.WriteLine("\n");
-            linksList.InsertFirst(9);
-            linksList.Display();
-            Console.WriteLine(linksList.AnyPosition(15, 3));
-            linksList.Display();
-            Console.WriteLine(linksList.DeleteFirst());
-            linksList.Display();
+            //LinksList linksList = new LinksList();
+            //linksList.InsertValue(10);
+            //linksList.InsertValue(11);
+            //linksList.InsertValue(12);
+            //linksList.Display();
+            //Console.WriteLine("\n");
+            //linksList.InsertFirst(9);
+            //linksList.Display();
+            //Console.WriteLine(linksList.AnyPosition(15, 3));
+            //linksList.Display();
+            //Console.WriteLine(linksList.DeleteFirst());
+            //linksList.Display();
 
+
+            LinkListPractice linkListPractice = new LinkListPractice();
+            linkListPractice.InsertElement(10);
+            linkListPractice.InsertElement(20);
+            linkListPractice.InsertElement(30);
+            linkListPractice.Display();
 
             Console.ReadLine();
         }
