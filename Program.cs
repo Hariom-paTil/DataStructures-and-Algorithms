@@ -41,7 +41,8 @@ namespace DataStructures_and_Algorithms
 
             int[] A = { 23, 45, 67, 8, 8, 34, 66, 67 },
                 b = { 12, 22, 44, 55, 66, 77, 88 },
-                c = { 29, 10, 14, 37, 13 }, revInput = { 1, 4, 3, 2, 6, 5 };
+                c = { 29, 10, 14, 37, 13 }, revInput = { 1, 4, 3, 2, 6, 5 }, con = { 0, 1, 0, 1, 1, 1, 1 }, con2 = { 0, 0, 1, 0, 1, 0 }, con3 = { 0, 0, 0, 0 };
+
             
 
             
@@ -83,7 +84,7 @@ namespace DataStructures_and_Algorithms
 
             //Console.WriteLine("Second Largest Element"+linearSearch.getSecondLargest(A));
 
-            //ArrayProblem arrayProblem = new ArrayProblem();
+            ArrayProblem arrayProblem = new ArrayProblem();
             // Console.WriteLine("Second Largest Element : "+arrayProblem.SecondLargestElement(A));
             // int[] result= arrayProblem.ReverseArray(revInput);
             // foreach(int item in result)
@@ -105,11 +106,16 @@ namespace DataStructures_and_Algorithms
             //linksList.Display();
 
 
-            LinkListPractice linkListPractice = new LinkListPractice();
-            linkListPractice.InsertElement(10);
-            linkListPractice.InsertElement(20);
-            linkListPractice.InsertElement(30);
-            linkListPractice.Display();
+            //LinkListPractice linkListPractice = new LinkListPractice();
+            //linkListPractice.InsertElement(10);
+            //linkListPractice.InsertElement(20);
+            //linkListPractice.InsertElement(30);
+            //linkListPractice.Display();
+
+            arrayProblem.Consecutive(con);
+            arrayProblem.Consecutive(con2);
+            arrayProblem.Consecutive(con3);
+
 
             Console.ReadLine();
         }

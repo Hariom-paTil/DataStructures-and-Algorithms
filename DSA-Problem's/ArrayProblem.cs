@@ -77,6 +77,37 @@ namespace DataStructures_and_Algorithms.DSA_Problem_s
 
 
         }
+        //Maximum consecutive one’s (or zeros) in a binary array
+        //[0, 1, 0, 1, 1, 1, 1]
+
+        public void Consecutive(int[] a)
+        {
+            int oneCount = 1;
+            int zeroCount = 1;//start form because we checked array as Length-1;
+            for (int i = 0; i < a.Length - 1; i++)
+            {
+                if (a[i] == 0 && a[i + 1] == 0)
+                {
+
+                    zeroCount++;
+
+                }
+                if (a[i] == 1 && a[i + 1] == 1)
+                {
+                    oneCount++;
+                }
+
+
+            }
+            if (oneCount > zeroCount)
+            {
+                Console.WriteLine("Maximum Consecutive One's : " + oneCount);
+            }
+            else
+            {
+                Console.WriteLine("Maximum Consecutive Zero's : " + zeroCount);
+            }
+        }
 
     }
 }
