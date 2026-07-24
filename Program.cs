@@ -106,15 +106,17 @@ namespace DataStructures_and_Algorithms
             //linksList.Display();
 
 
-            //LinkListPractice linkListPractice = new LinkListPractice();
+            LinkListPractice linkListPractice = new LinkListPractice();
             //linkListPractice.InsertElement(10);
             //linkListPractice.InsertElement(20);
             //linkListPractice.InsertElement(30);
             //linkListPractice.Display();
+            //linkListPractice.DeletedFirst();
+            //linkListPractice.Display();
+            //arrayProblem.Consecutive(con);
+            //arrayProblem.Consecutive(con2);
+            //arrayProblem.Consecutive(con3);
 
-            arrayProblem.Consecutive(con);
-            arrayProblem.Consecutive(con2);
-            arrayProblem.Consecutive(con3);
 
 
             Console.ReadLine();

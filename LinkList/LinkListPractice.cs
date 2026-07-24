@@ -90,5 +90,14 @@ namespace DataStructures_and_Algorithms.LinkList
         {
             return size == 0;
         }
+
+        public string DeletedFirst()
+        {
+            int e = head.element;
+            head = head.next;
+            return e + "Element Deleted";
+
+
+        }
     }
 }
