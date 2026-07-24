@@ -109,5 +109,37 @@ namespace DataStructures_and_Algorithms.DSA_Problem_s
             }
         }
 
+
+        //Move all Zeros to End of Array
+
+        public void MoveZeros(int[] a)
+        {
+            int pointer = a.Length - 1;
+            for (int i = 0; i < pointer; i++)
+            {
+                if (a[i] == 0)
+                {
+                    // check that pointer is not pointing to zero and decrement the pointer until it points to
+                    // non-zero element
+                    while (a[pointer] == 0)
+                    {
+                        pointer--;
+                    }
+
+
+                    int temp = a[i];
+                    a[i] = a[pointer];
+                    a[pointer] = temp;
+                    pointer--;
+                }
+
+            }
+
+            foreach(int item in a)
+            {
+               Console.Write(item + " ");
+            }
+        }
+
     }
 }

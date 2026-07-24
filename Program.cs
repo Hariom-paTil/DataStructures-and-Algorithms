@@ -41,7 +41,9 @@ namespace DataStructures_and_Algorithms
 
             int[] A = { 23, 45, 67, 8, 8, 34, 66, 67 },
                 b = { 12, 22, 44, 55, 66, 77, 88 },
-                c = { 29, 10, 14, 37, 13 }, revInput = { 1, 4, 3, 2, 6, 5 }, con = { 0, 1, 0, 1, 1, 1, 1 }, con2 = { 0, 0, 1, 0, 1, 0 }, con3 = { 0, 0, 0, 0 };
+                c = { 29, 10, 14, 37, 13 }, revInput = { 1, 4, 3, 2, 6, 5 }, 
+                con = { 0, 1, 0, 1, 1, 1, 1 }, con2 = { 0, 0, 1, 0, 1, 0 }, 
+                con3 = { 0, 0, 0, 0 }, zeroFinder = { 1, 2, 0, 4, 3, 0, 5, 0 };
 
             
 
@@ -117,7 +119,7 @@ namespace DataStructures_and_Algorithms
             //arrayProblem.Consecutive(con2);
             //arrayProblem.Consecutive(con3);
 
-
+            arrayProblem.MoveZeros(zeroFinder);
 
             Console.ReadLine();
         }
