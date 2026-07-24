@@ -174,6 +174,30 @@ namespace DataStructures_and_Algorithms.DSA_Problem_s
 
         }
 
+        //Stock Buy and Sell - Max one Transaction Allowed
+        //7, 10, 1, 3, 6, 9, 2
+        public int MaxProfitInStock(int[] arr)
+        {
+            int highProfit = 0;
+            int lessPrice = 0;
+            for(int i = 1; i < arr.Length-1; i++)
+            {
+                if (arr[lessPrice] > arr[i])
+                {
+                    lessPrice = i;
+                    
+                }
+            }
+            for(int i = lessPrice ; i < arr.Length - 1; i++)
+            {
+                if (arr[i] < arr[i + 1])
+                {
+                    
+                    highProfit = arr[i + 1];
+                }
+            }
+            return highProfit - arr[lessPrice];
+        }
 
     }
 }
