@@ -141,5 +141,39 @@ namespace DataStructures_and_Algorithms.DSA_Problem_s
             }
         }
 
+        //Sort an array in wave form
+        //Input: arr[] = [1, 2, 3, 4, 5]
+        //Output: [2, 1, 4, 3, 5]
+
+        public int[] SortArrayWave(int[] a)
+        {
+            bool check=true;
+            int start = 0;
+            while (start < a.Length - 1)
+            {
+                if (check)
+                {
+                    int temp = a[start+1];
+                    a[start + 1] = a[start];
+                    a[start] = temp;
+                    check = false;
+                    start = start + 2;
+
+                }
+                else
+                {
+                    int temp = a[start];
+                    a[start] = a[start + 1];
+                    a[start + 1] = temp;
+                    check = true;
+                    start = start + 2;
+                }
+                
+            }
+            return a;
+
+        }
+
+
     }
 }

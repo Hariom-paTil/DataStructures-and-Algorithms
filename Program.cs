@@ -5,6 +5,11 @@ using DataStructures_and_Algorithms.SortingAlgorithms;
 
 namespace DataStructures_and_Algorithms
 {
+
+    //how to debug add red pointer on poistion where you want start the debug 
+    //run the program once's you will go to this poistion press F10 it run next -next step;s
+    // for checking the what value the variable currnlty hold click on Debug Menu--> Window-->Locals here
+   //you check what varible currnty value was.
    public  class Program
     {
         // **IMPORTANT**:
@@ -40,7 +45,7 @@ namespace DataStructures_and_Algorithms
         {
 
             int[] A = { 23, 45, 67, 8, 8, 34, 66, 67 },
-                b = { 12, 22, 44, 55, 66, 77, 88 },
+                b = { 1, 2, 3, 4, 5 },
                 c = { 29, 10, 14, 37, 13 }, revInput = { 1, 4, 3, 2, 6, 5 }, 
                 con = { 0, 1, 0, 1, 1, 1, 1 }, con2 = { 0, 0, 1, 0, 1, 0 }, 
                 con3 = { 0, 0, 0, 0 }, zeroFinder = { 1, 2, 0, 4, 3, 0, 5, 0 };
@@ -119,7 +124,13 @@ namespace DataStructures_and_Algorithms
             //arrayProblem.Consecutive(con2);
             //arrayProblem.Consecutive(con3);
 
-            arrayProblem.MoveZeros(zeroFinder);
+            //arrayProblem.MoveZeros(zeroFinder);
+            int[] result = arrayProblem.SortArrayWave(b);
+            foreach (int item in result) { 
+            
+            Console.WriteLine(item + " ");
+
+            }
 
             Console.ReadLine();
         }
