@@ -53,6 +53,24 @@ namespace DataStructures_and_Algorithms.LinkList.CircularLinkedList
            
 
         }
+        public void InsertFirst(int e)
+        {
+            Node newNode=new Node(e, null);
+            if (IsEmpty())
+            {
+                head = newNode;
+                tail = newNode;
+                size = size + 1;
+
+            }
+            else
+            {
+                newNode.next = head;
+                head= newNode;
+                tail.next = head;
+                size = size + 1;
+            }
+        }
         public void Display()
         {
             if (IsEmpty())

@@ -139,6 +139,7 @@ namespace DataStructures_and_Algorithms
             circularLinkList.AddElementInLast(20);
             circularLinkList.AddElementInLast(30);
             circularLinkList.AddElementInLast(40);
+            circularLinkList.InsertFirst(5);
             circularLinkList.Display();
 
             Console.WriteLine(arrayProblem.MaxProfitInStock(c));
