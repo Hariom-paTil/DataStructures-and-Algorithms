@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructures_and_Algorithms.LinkList
+namespace DataStructures_and_Algorithms.LinkList.SingleLinkList
 {
     public class Nodes {
         public int element;

@@ -1,5 +1,6 @@
 ﻿using DataStructures_and_Algorithms.DSA_Problem_s;
-using DataStructures_and_Algorithms.LinkList;
+using DataStructures_and_Algorithms.LinkList.CircularLinkedList;
+using DataStructures_and_Algorithms.LinkList.SingleLinkList;
 using DataStructures_and_Algorithms.SearchingAlgorithms;
 using DataStructures_and_Algorithms.SortingAlgorithms;
 
@@ -131,7 +132,16 @@ namespace DataStructures_and_Algorithms
             //Console.WriteLine(item + " ");
 
             //}
-           Console.WriteLine(arrayProblem.MaxProfitInStock(c));
+
+
+            CircularLinkList circularLinkList = new CircularLinkList();
+            circularLinkList.AddElementInLast(10);
+            circularLinkList.AddElementInLast(20);
+            circularLinkList.AddElementInLast(30);
+            circularLinkList.AddElementInLast(40);
+            circularLinkList.Display();
+
+            Console.WriteLine(arrayProblem.MaxProfitInStock(c));
 
             Console.ReadLine();
         }
