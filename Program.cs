@@ -3,6 +3,7 @@ using DataStructures_and_Algorithms.LinkList.CircularLinkedList;
 using DataStructures_and_Algorithms.LinkList.SingleLinkList;
 using DataStructures_and_Algorithms.SearchingAlgorithms;
 using DataStructures_and_Algorithms.SortingAlgorithms;
+using DataStructures_and_Algorithms.Stack;
 
 namespace DataStructures_and_Algorithms
 {
@@ -134,15 +135,31 @@ namespace DataStructures_and_Algorithms
             //}
 
 
-            CircularLinkList circularLinkList = new CircularLinkList();
-            circularLinkList.AddElementInLast(10);
-            circularLinkList.AddElementInLast(20);
-            circularLinkList.AddElementInLast(30);
-            circularLinkList.AddElementInLast(40);
-            circularLinkList.InsertFirst(5);
-            circularLinkList.Display();
+            //CircularLinkList circularLinkList = new CircularLinkList();
+            //circularLinkList.AddElementInLast(10);
+            //circularLinkList.AddElementInLast(20);
+            //circularLinkList.AddElementInLast(30);
+            //circularLinkList.AddElementInLast(40);
+            //circularLinkList.InsertFirst(5);
+            //circularLinkList.Display();
 
-            Console.WriteLine(arrayProblem.MaxProfitInStock(c));
+
+            //Console.WriteLine(arrayProblem.MaxProfitInStock(c));
+
+            Stack_Implement stack_ = new Stack_Implement(5);
+            stack_.PushElement(10);
+            stack_.PushElement(20);
+            stack_.PushElement(30);
+            stack_.PushElement(40);
+            stack_.PushElement(50);
+            stack_.PushElement(60);
+            stack_.Display();
+            Console.WriteLine(stack_.PopElement());
+            Console.WriteLine(stack_.Peek());
+            stack_.Display();
+
+
+
 
             Console.ReadLine();
         }
