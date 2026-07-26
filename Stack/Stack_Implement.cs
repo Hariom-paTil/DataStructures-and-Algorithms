@@ -6,6 +6,16 @@ using System.Threading.Tasks;
 
 namespace DataStructures_and_Algorithms.Stack
 {
+
+    //What Is Stack?
+    //Stack is a linear data structure that follows the Last In First Out (LIFO) principle. It means that the last element added to the stack will be the first one to be removed.
+    //Think of it like a stack of plates; you can only add or remove the top plate.
+    //In a stack, there are two main operations:
+    //Push: This operation adds an element to the top of the stack.
+    //Pop: This operation removes the top element from the stack.
+    //Other operations include:
+    //Peek: This operation returns the top element of the stack without removing it.
+
     public class Stack_Implement
     {
         public int[] stack;

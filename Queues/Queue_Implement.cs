@@ -6,6 +6,16 @@ using System.Threading.Tasks;
 
 namespace DataStructures_and_Algorithms.Queue
 {
+
+    // What Is Queue?
+    // Queue is a linear data structure that follows the First In First Out (FIFO) principle.
+    // It means that the first element added to the queue will be the first one to be removed.
+    // Think of it like a line of people waiting for a service; the first person in line is served first.
+    // In a queue, there are two main operations:
+    // Enqueue: This operation adds an element to the rear of the queue.
+    // Dequeue: This operation removes the front element from the queue.
+    // Other operations include:
+    // Peek: This operation returns the front element of the queue without removing it.
     public class Queue_Implement
     {
         public int[] queue;
