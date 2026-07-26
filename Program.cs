@@ -1,6 +1,7 @@
 ﻿using DataStructures_and_Algorithms.DSA_Problem_s;
 using DataStructures_and_Algorithms.LinkList.CircularLinkedList;
 using DataStructures_and_Algorithms.LinkList.SingleLinkList;
+using DataStructures_and_Algorithms.Queue;
 using DataStructures_and_Algorithms.SearchingAlgorithms;
 using DataStructures_and_Algorithms.SortingAlgorithms;
 using DataStructures_and_Algorithms.Stack;
@@ -146,18 +147,25 @@ namespace DataStructures_and_Algorithms
 
             //Console.WriteLine(arrayProblem.MaxProfitInStock(c));
 
-            Stack_Implement stack_ = new Stack_Implement(5);
-            stack_.PushElement(10);
-            stack_.PushElement(20);
-            stack_.PushElement(30);
-            stack_.PushElement(40);
-            stack_.PushElement(50);
-            stack_.PushElement(60);
-            stack_.Display();
-            Console.WriteLine(stack_.PopElement());
-            Console.WriteLine(stack_.Peek());
-            stack_.Display();
+            //Stack_Implement stack_ = new Stack_Implement(5);
+            //stack_.PushElement(10);
+            //stack_.PushElement(20);
+            //stack_.PushElement(30);
+            //stack_.PushElement(40);
+            //stack_.PushElement(50);
+            //stack_.PushElement(60);
+            //stack_.Display();
+            //Console.WriteLine(stack_.PopElement());
+            //Console.WriteLine(stack_.Peek());
+            //stack_.Display();
 
+
+            Queue_Implement queue_ = new Queue_Implement(5);
+            queue_.EnQueue(10);
+            queue_.EnQueue(20);
+            queue_.EnQueue(30);
+            queue_.Display();
+            Console.WriteLine("Peek Element"+queue_.Peek());
 
 
 
