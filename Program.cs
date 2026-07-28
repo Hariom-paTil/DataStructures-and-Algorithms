@@ -8,12 +8,24 @@ using DataStructures_and_Algorithms.Stack;
 
 namespace DataStructures_and_Algorithms
 {
+    //Before sloving in DSA problem you need to understand the below point's
+    //1: learn the basic of C# fundamental's.
+    // 2: learn the basic of C# OOP's concept.
+    // 3: First learn all the topics of DSA 
+    // Like Searching, Sorting, Stack, Queue, LinkList, Tree, Graph, Hashing etc.
+    // 4: After that Learn how to undersyand the problem statement and how to solve it.
+    // 5: after that watch the video of problem statement and how to solve it.
+    // 6: then start sloving easy problem of all topic's 
+    // 7: onece you will be comfortable with easy problem then start solving medium problem of all topic's
 
+
+
+    //HOW TO DEBUG C# PROGRAM :
     //how to debug add red pointer on poistion where you want start the debug 
     //run the program once's you will go to this poistion press F10 it run next -next step;s
     // for checking the what value the variable currnlty hold click on Debug Menu--> Window-->Locals here
-   //you check what varible currnty value was.
-   public  class Program
+    //you check what varible currnty value was.
+    public class Program
     {
         // **IMPORTANT**:
         // why we not used string ? when perform revrse the number because
