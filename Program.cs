@@ -181,7 +181,7 @@ namespace DataStructures_and_Algorithms
             //Console.WriteLine("Peek Element"+queue_.Peek());
 
 
-            BinarySearchTree binarySearchTree = new BinarySearchTree();
+            BinarySearchTreeRecursion binarySearchTree = new BinarySearchTreeRecursion();
             binarySearchTree.Insert(binarySearchTree.root, 30);
             binarySearchTree.Insert(binarySearchTree.root, 20);
             binarySearchTree.Insert(binarySearchTree.root, 60);
@@ -189,7 +189,7 @@ namespace DataStructures_and_Algorithms
             binarySearchTree.Insert(binarySearchTree.root,50);
             binarySearchTree.Insert(binarySearchTree.root,10);
             Console.WriteLine("InOrder Traversal of Binary Search Tree:");
-            binarySearchTree.InOrder(binarySearchTree.root);
+            binarySearchTree.Inorder(binarySearchTree.root);
 
 
             Console.ReadLine();
