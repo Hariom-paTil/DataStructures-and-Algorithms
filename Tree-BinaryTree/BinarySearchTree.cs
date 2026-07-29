@@ -116,6 +116,34 @@ namespace DataStructures_and_Algorithms.Tree_BinaryTree
                 InOrder(temproot.right);
             }
         }
+        public void SearchTree(Node tempRoot,int value)
+        {
+            if (tempRoot != null)
+            {
+                while (tempRoot != null)
+                {
+                    if (tempRoot.element == value)
+                    {
+                        Console.WriteLine("Element Found :) ");
+                        return;
+                    }
+                    else if (tempRoot.element > value)
+                    {
+                        tempRoot = tempRoot.Left;
+                    }
+                    else if (tempRoot.element < value)
+                    {
+                        tempRoot = tempRoot.right;
+                    }
+                }
+                Console.WriteLine("Element Is Not Found :( ");
+
+            }
+            else
+            {
+                Console.WriteLine("Tree Is Empty");
+            }
+        }
 
     }
 }
