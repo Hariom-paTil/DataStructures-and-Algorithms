@@ -98,5 +98,32 @@ namespace DataStructures_and_Algorithms.Tree_BinaryTree
                 Inorder(tempRoot.right);
             }
         }
+
+        public void Search(Nodes tempRoot,int value)
+        {
+            if (tempRoot != null)
+            {
+                if (tempRoot.element == value)
+                {
+                    Console.WriteLine("Element Is Found : )");
+                }
+                else if (tempRoot.element > value)
+                {
+                    Search(tempRoot.left, value);
+                }
+                else if (tempRoot.element < value)
+                {
+                    Search(tempRoot.right, value);
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("Tree Already Empty");
+            }
+        }
+
+
+
     }
 }
