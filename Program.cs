@@ -5,6 +5,7 @@ using DataStructures_and_Algorithms.Queue;
 using DataStructures_and_Algorithms.SearchingAlgorithms;
 using DataStructures_and_Algorithms.SortingAlgorithms;
 using DataStructures_and_Algorithms.Stack;
+using DataStructures_and_Algorithms.Tree_BinaryTree;
 
 namespace DataStructures_and_Algorithms
 {
@@ -172,13 +173,23 @@ namespace DataStructures_and_Algorithms
             //stack_.Display();
 
 
-            Queue_Implement queue_ = new Queue_Implement(5);
-            queue_.EnQueue(10);
-            queue_.EnQueue(20);
-            queue_.EnQueue(30);
-            queue_.Display();
-            Console.WriteLine("Peek Element"+queue_.Peek());
+            //Queue_Implement queue_ = new Queue_Implement(5);
+            //queue_.EnQueue(10);
+            //queue_.EnQueue(20);
+            //queue_.EnQueue(30);
+            //queue_.Display();
+            //Console.WriteLine("Peek Element"+queue_.Peek());
 
+
+            BinarySearchTree binarySearchTree = new BinarySearchTree();
+            binarySearchTree.Insert(binarySearchTree.root, 30);
+            binarySearchTree.Insert(binarySearchTree.root, 20);
+            binarySearchTree.Insert(binarySearchTree.root, 60);
+            binarySearchTree.Insert(binarySearchTree.root, 40);
+            binarySearchTree.Insert(binarySearchTree.root,50);
+            binarySearchTree.Insert(binarySearchTree.root,10);
+            Console.WriteLine("InOrder Traversal of Binary Search Tree:");
+            binarySearchTree.InOrder(binarySearchTree.root);
 
 
             Console.ReadLine();
