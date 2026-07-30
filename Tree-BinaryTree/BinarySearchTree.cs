@@ -145,5 +145,128 @@ namespace DataStructures_and_Algorithms.Tree_BinaryTree
             }
         }
 
+        //IMPORTANT//
+        //// <summary>
+        /// How to delete a node from a binary search tree?
+        /// There are three cases to consider when deleting a node from a binary search tree:
+        ///  CASE 1: The node to be deleted is a leaf node (has no children).
+        /// in this case, we can simply remove the node from the tree.
+        ///  CASE 2: The node to be deleted has one child.
+        /// in this case, we can remove the node and replace it with its child.
+        ///  CASE 3: The node to be deleted has two children.
+        /// in this case, we need to find the inorder successor 
+        /// (the smallest node in the right subtree) 
+        /// or the inorder predecessor (the largest node in the left subtree)
+        /// of the node to be deleted.
+        /// </summary>
+
+
+        // How We Handle Case 3: - ( simple word )
+        // 1 Go to the right subtree.
+        // 2 Find the smallest node(keep going left).
+        // 3 Copy its value into the current node.
+        // 4 Delete that smallest node from its original position.
+
+        public void DeletedNode(Node travelNode, int e)
+        {
+            Node temp = null;
+
+            // Search the node
+            while (travelNode != null && travelNode.element != e)
+            {
+                temp = travelNode;
+
+                if (e < travelNode.element)
+                    travelNode = travelNode.Left;
+                else
+                    travelNode = travelNode.right;
+            }
+
+           
+            if (travelNode == null)
+            {
+                Console.WriteLine("Element Not Found");
+                return;
+            }
+
+         
+            if (travelNode.Left == null && travelNode.right == null)
+            {
+                // Root node
+                if (temp == null)
+                {
+                    root = null;
+                }
+                else if (temp.Left == travelNode)
+                {
+                    temp.Left = null;
+                }
+                else
+                {
+                    temp.right = null;
+                }
+
+                Console.WriteLine("Element Deleted");
+                return;
+            }
+
+            
+            if (travelNode.Left == null || travelNode.right == null)
+            {
+                Node child;
+
+                if (travelNode.Left != null)
+                    child = travelNode.Left;
+                else
+                    child = travelNode.right;
+
+              
+                if (temp == null)
+                {
+                    root = child;
+                }
+                else if (temp.Left == travelNode)
+                {
+                    temp.Left = child;
+                }
+                else
+                {
+                    temp.right = child;
+                }
+
+                Console.WriteLine("Element Deleted");
+                return;
+            }
+
+         
+
+            Node successorParent = travelNode;
+            Node successor = travelNode.right;
+
+           
+            while (successor.Left != null)
+            {
+                successorParent = successor;
+                successor = successor.Left;
+            }
+
+            travelNode.element = successor.element;
+
+           
+            if (successorParent.Left == successor)
+            {
+                successorParent.Left = successor.right;
+            }
+            else
+            {
+                successorParent.right = successor.right;
+            }
+
+            Console.WriteLine("Element Deleted");
+        }
     }
+
+
+
+    
 }
