@@ -1,4 +1,5 @@
 ﻿using DataStructures_and_Algorithms.DSA_Problem_s;
+using DataStructures_and_Algorithms.Heap_DataStructure;
 using DataStructures_and_Algorithms.LinkList.CircularLinkedList;
 using DataStructures_and_Algorithms.LinkList.SingleLinkList;
 using DataStructures_and_Algorithms.Queue;
@@ -181,17 +182,23 @@ namespace DataStructures_and_Algorithms
             //Console.WriteLine("Peek Element"+queue_.Peek());
 
 
-            BinarySearchTree binarySearchTree = new BinarySearchTree();
-            binarySearchTree.Insert(binarySearchTree.root, 30);
-            binarySearchTree.Insert(binarySearchTree.root, 20);
-            binarySearchTree.Insert(binarySearchTree.root, 60);
-            binarySearchTree.Insert(binarySearchTree.root, 40);
-            binarySearchTree.Insert(binarySearchTree.root,50);
-            binarySearchTree.Insert(binarySearchTree.root,10);
-            Console.WriteLine("InOrder Traversal of Binary Search Tree:");
-            binarySearchTree.InOrder(binarySearchTree.root);
-            binarySearchTree.SearchTree(binarySearchTree.root, 100);
-            
+            //BinarySearchTree binarySearchTree = new BinarySearchTree();
+            //binarySearchTree.Insert(binarySearchTree.root, 30);
+            //binarySearchTree.Insert(binarySearchTree.root, 20);
+            //binarySearchTree.Insert(binarySearchTree.root, 60);
+            //binarySearchTree.Insert(binarySearchTree.root, 40);
+            //binarySearchTree.Insert(binarySearchTree.root,50);
+            //binarySearchTree.Insert(binarySearchTree.root,10);
+            //Console.WriteLine("InOrder Traversal of Binary Search Tree:");
+            //binarySearchTree.InOrder(binarySearchTree.root);
+            //binarySearchTree.SearchTree(binarySearchTree.root, 100);
+
+            Heap_DS heap_DS = new Heap_DS(5);
+            heap_DS.Insert(10);
+            heap_DS.Insert(30);
+            heap_DS.Insert(15);
+            heap_DS.Insert(40);
+            heap_DS.Display();
 
 
             Console.ReadLine();
