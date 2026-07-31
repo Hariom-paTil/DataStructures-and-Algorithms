@@ -193,14 +193,14 @@ namespace DataStructures_and_Algorithms
             //binarySearchTree.InOrder(binarySearchTree.root);
             //binarySearchTree.SearchTree(binarySearchTree.root, 100);
 
-            Heap_DS heap_DS = new Heap_DS(5);
+            HeapPractice heap_DS = new HeapPractice(5);
             heap_DS.Insert(10);
             heap_DS.Insert(30);
             heap_DS.Insert(15);
             heap_DS.Insert(40);
             heap_DS.Display();
-            Console.WriteLine(" "+heap_DS.Deleted());
-            heap_DS.Display();
+            //Console.WriteLine(" "+heap_DS.Deleted());
+            //heap_DS.Display();
 
             Console.ReadLine();
         }
