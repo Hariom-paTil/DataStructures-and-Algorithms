@@ -199,7 +199,8 @@ namespace DataStructures_and_Algorithms
             heap_DS.Insert(15);
             heap_DS.Insert(40);
             heap_DS.Display();
-
+            Console.WriteLine(" "+heap_DS.Deleted());
+            heap_DS.Display();
 
             Console.ReadLine();
         }
