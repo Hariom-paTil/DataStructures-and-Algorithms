@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace DataStructures_and_Algorithms.Heap_DataStructure
 {
+    //What is heap in DSA
     
-  
 
    public class Heap_DS
     {
