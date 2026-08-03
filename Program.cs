@@ -10,6 +10,17 @@ using DataStructures_and_Algorithms.Tree_BinaryTree;
 
 namespace DataStructures_and_Algorithms
 {
+    //Formula 
+    // Whenever you want find missing number in array used this formal
+    //array.length * (array.length + 1) / 2 - sum of array element's
+
+
+
+
+
+
+
+
     //Before sloving in DSA problem you need to understand the below point's
     //1: learn the basic of C# fundamental's.
     // 2: learn the basic of C# OOP's concept.
