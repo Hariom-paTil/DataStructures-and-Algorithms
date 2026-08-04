@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DataStructures_and_Algorithms.DSA_Problem_s
 {
@@ -198,6 +199,43 @@ namespace DataStructures_and_Algorithms.DSA_Problem_s
             }
             return highProfit - arr[lessPrice];
         }
+
+
+
+        //Given an integer array nums and an integer k, find if the same number appears twice.
+        //The difference between their indices must be less than or equal to k(abs(i - j) <= k).
+        //Return true if you find any one such pair; otherwise return false.
+
+
+        // Soultion :
+        public class Solution
+        {
+            public bool ContainsNearbyDuplicate(int[] nums, int k)
+            {
+                Dictionary<int, int> find = new Dictionary<int, int>();
+
+                for (int i = 0; i < nums.Length; i++)
+                {
+                    if (find.ContainsKey(nums[i]))
+                    {
+                        if (i - find[nums[i]] <= k)
+                        {
+                            return true;
+                        }
+
+
+                        find[nums[i]] = i;
+                    }
+                    else
+                    {
+                        find.Add(nums[i], i);
+                    }
+                }
+
+                return false;
+            }
+        }
+
 
     }
 }

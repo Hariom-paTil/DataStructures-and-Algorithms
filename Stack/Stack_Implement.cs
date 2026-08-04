@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace DataStructures_and_Algorithms.Stack
 {
@@ -72,6 +74,67 @@ namespace DataStructures_and_Algorithms.Stack
                 Console.WriteLine(" " + stack[i]);
             }
             
+        }
+
+
+        //You are keeping the scores for a baseball game with strange rules. At the beginning of the game, you start with an empty record.
+
+        //        You are given a list of strings operations, where operations[i] is the ith operation you must apply to the record and is one of the following:
+
+        //An integer x.
+        //Record a new score of x.
+        //'+'.
+        //Record a new score that is the sum of the previous two scores.
+        //'D'.
+        //Record a new score that is the double of the previous score.
+        //'C'.
+        //Invalidate the previous score, removing it from the record.
+        //Return the sum of all the scores on the record after applying all the operations.
+
+        //The test cases are generated such that the answer and all intermediate calculations fit in a 32-bit integer and that all operations are valid.
+
+
+        // Soution :
+        public class Solution
+        {
+            public int CalPoints(string[] operations)
+            {
+                int top = 0;
+                int[] stack = new int[operations.Length + 2];
+                for (int i = 0; i < operations.Length; i++)
+                {
+                    if (operations[i] == "C")
+                    {
+                        stack[top] = 0;
+                        top--;
+                    }
+                    else if (operations[i] == "D")
+                    {
+                        int result = stack[top] * 2;
+                        top++;
+                        stack[top] = result;
+                    }
+                    else if (operations[i] == "+")
+                    {
+                        int result = stack[top - 1] + stack[top];
+                        top++;
+                        stack[top] = result;
+                    }
+                    else
+                    {
+                        top++;
+                        stack[top] = int.Parse(operations[i]);
+
+                    }
+                }
+                int sum = 0;
+                for (int i = 0; i <= top; i++)
+                {
+                    sum = sum + stack[i];
+                }
+
+                return sum;
+            }
         }
 
     }
