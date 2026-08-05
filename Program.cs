@@ -1,4 +1,5 @@
 ﻿using DataStructures_and_Algorithms.DSA_Problem_s;
+using DataStructures_and_Algorithms.Graph_s;
 using DataStructures_and_Algorithms.Heap_DataStructure;
 using DataStructures_and_Algorithms.LinkList.CircularLinkedList;
 using DataStructures_and_Algorithms.LinkList.SingleLinkList;
@@ -204,14 +205,34 @@ namespace DataStructures_and_Algorithms
             //binarySearchTree.InOrder(binarySearchTree.root);
             //binarySearchTree.SearchTree(binarySearchTree.root, 100);
 
-            HeapPractice heap_DS = new HeapPractice(5);
-            heap_DS.Insert(10);
-            heap_DS.Insert(30);
-            heap_DS.Insert(15);
-            heap_DS.Insert(40);
-            heap_DS.Display();
-            //Console.WriteLine(" "+heap_DS.Deleted());
+            //HeapPractice heap_DS = new HeapPractice(5);
+            //heap_DS.Insert(10);
+            //heap_DS.Insert(30);
+            //heap_DS.Insert(15);
+            //heap_DS.Insert(40);
             //heap_DS.Display();
+            ////Console.WriteLine(" "+heap_DS.Deleted());
+            ////heap_DS.Display();
+            ///
+            Graph graph = new Graph(5);
+            Console.WriteLine("Graph Created with 5 vertices.");
+            Console.WriteLine("Inserting edges into the graph...");
+            graph.InsertElement(1, 2);
+            graph.InsertElement(2, 1);
+            graph.InsertElement(2, 3);
+            graph.InsertElement(2, 4);
+            graph.InsertElement(3, 2);
+            graph.InsertElement(3, 4);
+            graph.InsertElement(4, 2);
+            graph.InsertElement(4, 3);
+            graph.DisplayGraph();
+            graph.ConnectEdge(1,4);
+            Console.WriteLine("/n");
+            graph.DisplayGraph();
+            graph.RemoveEdge(2, 4);
+            Console.WriteLine("/n");
+            graph.DisplayGraph();
+
 
             Console.ReadLine();
         }
