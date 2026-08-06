@@ -215,20 +215,20 @@ namespace DataStructures_and_Algorithms
             ////Console.WriteLine(" "+heap_DS.Deleted());
             ////heap_DS.Display();
             ///
-            Graph graph = new Graph(5);
-            Console.WriteLine("Graph Created with 5 vertices.");
-            Console.WriteLine("Inserting edges into the graph...");
-            graph.InsertElement(1, 2);
-            graph.InsertElement(2, 1);
-            graph.InsertElement(2, 3);
-            graph.InsertElement(2, 4);
-            graph.InsertElement(3, 2);
-            graph.InsertElement(3, 4);
-            graph.InsertElement(4, 2);
-            graph.InsertElement(4, 3);
+            //Graph graph = new Graph(5);
+            //Console.WriteLine("Graph Created with 5 vertices.");
+            //Console.WriteLine("Inserting edges into the graph...");
+            //graph.InsertElement(1, 2);
+            //graph.InsertElement(2, 1);
+            //graph.InsertElement(2, 3);
+            //graph.InsertElement(2, 4);
+            //graph.InsertElement(3, 2);
+            //graph.InsertElement(3, 4);
+            //graph.InsertElement(4, 2);
+            //graph.InsertElement(4, 3);
 
-            BFS bFS= new BFS();
-            bFS.BFS_Traversal(graph.adjacencyMatrix, 1, graph.vartices);
+            //BFS bFS= new BFS();
+            //bFS.BFS_Traversal(graph.adjacencyMatrix, 1, graph.vartices);
             //graph.DisplayGraph();
             //graph.ConnectEdge(1,4);
             //Console.WriteLine("/n");
@@ -236,6 +236,14 @@ namespace DataStructures_and_Algorithms
             //graph.RemoveEdge(2, 4);
             //Console.WriteLine("/n");
             //graph.DisplayGraph();
+
+            StackUsing_LinkList stackUsing_LinkList = new StackUsing_LinkList();
+            stackUsing_LinkList.Push(10);
+            stackUsing_LinkList.Push(20);
+            stackUsing_LinkList.Push(30);
+            stackUsing_LinkList.DisplayStack();
+            stackUsing_LinkList.Pop();
+            stackUsing_LinkList.DisplayStack();
 
 
 
