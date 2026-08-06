@@ -5,6 +5,7 @@ using DataStructures_and_Algorithms.Heap_DataStructure;
 using DataStructures_and_Algorithms.LinkList.CircularLinkedList;
 using DataStructures_and_Algorithms.LinkList.SingleLinkList;
 using DataStructures_and_Algorithms.Queue;
+using DataStructures_and_Algorithms.Queues;
 using DataStructures_and_Algorithms.SearchingAlgorithms;
 using DataStructures_and_Algorithms.SortingAlgorithms;
 using DataStructures_and_Algorithms.Stack;
@@ -237,13 +238,24 @@ namespace DataStructures_and_Algorithms
             //Console.WriteLine("/n");
             //graph.DisplayGraph();
 
-            StackUsing_LinkList stackUsing_LinkList = new StackUsing_LinkList();
-            stackUsing_LinkList.Push(10);
-            stackUsing_LinkList.Push(20);
-            stackUsing_LinkList.Push(30);
-            stackUsing_LinkList.DisplayStack();
-            stackUsing_LinkList.Pop();
-            stackUsing_LinkList.DisplayStack();
+            //StackUsing_LinkList stackUsing_LinkList = new StackUsing_LinkList();
+            //stackUsing_LinkList.Push(10);
+            //stackUsing_LinkList.Push(20);
+            //stackUsing_LinkList.Push(30);
+            //stackUsing_LinkList.DisplayStack();
+            //stackUsing_LinkList.Pop();
+            //stackUsing_LinkList.DisplayStack();
+
+
+            QueueUsing_LinkList queue = new QueueUsing_LinkList();
+            queue.EnQueue(10);
+            queue.EnQueue(20);
+            queue.EnQueue(30);
+            queue.DisplayQueue();
+            queue.DeQueue();
+            Console.WriteLine("After DQueue");
+            queue.DisplayQueue();
+
 
 
 
