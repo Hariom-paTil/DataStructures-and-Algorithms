@@ -1,5 +1,6 @@
 ﻿using DataStructures_and_Algorithms.DSA_Problem_s;
 using DataStructures_and_Algorithms.Graph_s;
+using DataStructures_and_Algorithms.Graph_s.Graph_traversal_algorithm;
 using DataStructures_and_Algorithms.Heap_DataStructure;
 using DataStructures_and_Algorithms.LinkList.CircularLinkedList;
 using DataStructures_and_Algorithms.LinkList.SingleLinkList;
@@ -225,13 +226,17 @@ namespace DataStructures_and_Algorithms
             graph.InsertElement(3, 4);
             graph.InsertElement(4, 2);
             graph.InsertElement(4, 3);
-            graph.DisplayGraph();
-            graph.ConnectEdge(1,4);
-            Console.WriteLine("/n");
-            graph.DisplayGraph();
-            graph.RemoveEdge(2, 4);
-            Console.WriteLine("/n");
-            graph.DisplayGraph();
+
+            BFS bFS= new BFS();
+            bFS.BFS_Traversal(graph.adjacencyMatrix, 1, graph.vartices);
+            //graph.DisplayGraph();
+            //graph.ConnectEdge(1,4);
+            //Console.WriteLine("/n");
+            //graph.DisplayGraph();
+            //graph.RemoveEdge(2, 4);
+            //Console.WriteLine("/n");
+            //graph.DisplayGraph();
+
 
 
             Console.ReadLine();
