@@ -70,5 +70,32 @@ namespace DataStructures_and_Algorithms.Heap_DataStructure
                 Console.WriteLine(data[i]);
             }
         }
+
+
+        //public int[] data;
+        //public int heapSize = 0;
+        //int rootfinder = 0;
+        //public int maxSize;
+
+        public string InsertValue(int e) {
+
+            if (heapSize == maxSize) { return "Heap Already Full"; }
+            else
+            {
+                heapSize = heapSize+1;
+                rootfinder = heapSize;
+                while (heapSize > 1 && e > data[rootfinder / 2])
+                {
+                    data[rootfinder] = data[rootfinder / 2];
+                    rootfinder = rootfinder / 2;
+                }
+                data[rootfinder] = e; 
+            }
+
+
+            return "";
+        }
+
+
     }
 }
